@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BirthYear = findViewById(R.id.TbInputNo); // from here onwards I am going to refer user input to this object
-        DisAns = findViewById(R.id.Lb1Ans); // from here onwards I am going to refer label ans to this object
+        BirthYear = BirthYear.findViewById(); // from here onwards I am going to refer user input to this object
+        DisAns = BirthYear.findViewById(); // from here onwards I am going to refer label ans to this object
 
 
-        Button BtnCalc = findViewById(R.id.BtnCalc);
+        Button BtnCalc = BtnCalc.findViewById();
         BtnCalc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void setContentView(int activity_main) {
+    }
+
     public void CalcAge(View view){
 
         Integer birthYear = Integer.valueOf(BirthYear.getText().toString());
@@ -41,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         String ans = String.valueOf(currYear - birthYear);
 
         DisAns.setText("Your age is " + ans + " years old.");
+        //fffffffffff comment testing
+        //jjjjjjjjjjjj comment testing
+        //
 
 
 
