@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Old_AgeCal</string>
+    <string name="Topic">Calculate Age</string>
+    <string name="InputHint">Enter Birth Year</string>
+    <string name="BtnName">Calculate</string>
+    <string name="txtAns">Your ans will appear in here</string>
+</resources>
